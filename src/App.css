@@ -12,7 +12,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,6 +31,157 @@
 .App-link {
   color: #61dafb;
 }
+.container{
+  max-width: 1280px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cursor{
+  cursor: pointer;
+}
+
+.heading{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.col-5{
+  width: 41.66%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.col-6{
+  width: 50%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.col-7{
+  width: 58.33%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.col-12{
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+  img{
+    width: 100%;
+    border-radius: 30px;
+  }
+  .img-line{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    font-size: 58px;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+  }
+  .position-relative{
+    position: relative;
+  }
+  .card{
+    border-radius: 10px;
+background: #F3F5F6;
+box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.00);
+padding:23px 14px 22px 14px ;
+transition: all 700ms;
+cursor: pointer;
+  }
+
+.card:hover{
+  box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 0.7);
+}
+.img-hover{
+  transition: all 700ms ease;
+}
+.img-hover:hover{
+  box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 0.7);
+}
+  .card-para{
+    font-style: 16px;
+    font-weight: 400;
+    text-align: start;
+    padding-top: 22px;
+    padding-bottom: 27px;
+  }
+  .pb-btn{
+    padding-bottom: 10px;
+  }
+
+  .card-btn{
+    border-radius: 5px;
+background: #232323;
+color: #FFF;
+font-size: 16px;
+font-weight: 600;
+padding: 8px 31px;
+border: 1px solid black;
+transition: all 500ms;
+  }
+  .card-btn:hover{
+    background: inherit;
+    color: black;
+  
+  }
+  .money-1{
+    color: #9E3040;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 24px;
+font-weight: 600;
+  }
+  .money-2{
+    color: #686868;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 16px;
+font-weight: 400;
+text-decoration-line: line-through;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .align-center{
+    align-items: center;
+  }
+  .justify-content-between{
+    justify-content: space-between;
+  }
+  .flex-wrap{
+    flex-wrap: wrap;
+  }
+  .pt-row{
+    padding-top: 30px;  
+  }
+  .pb-row{
+    padding-bottom: 40px;  
+  }
+  .show-btn{
+    border-radius: 5px;
+background: #9E3040;
+box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
+color: white;
+border-radius: 5px;
+background: #9E3040;
+box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
+padding: 10px 29px 10px 28px;
+border: none;
+transition: all 500ms;
+border:2px solid #9E3040;
+  }
+.show-btn:hover{
+  background:  inherit;
+  color: #9E3040;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +189,50 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-6{
+    width: 50%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .img-line{
+    font-size: 98px;
+  }
+}
+@media (min-width:992px) {
+  .col-lg-5{
+    width: 41.66%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .col-lg-7{
+    width: 58.33%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .col-lg-6{
+    width: 50%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .img-line{
+    font-size: 58px;
+  }
+  .card-para{
+    font-size: 12px;
+  }
+  .card-btn{
+    font-size: 12px;
+  }
+}
+@media (min-width:1024px) {
+  .flex-nowrap{
+    flex-wrap: nowrap;
+  }
+  .card-para{
+    font-size: 16px;
   }
 }
